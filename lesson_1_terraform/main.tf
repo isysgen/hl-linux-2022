@@ -9,6 +9,10 @@ terraform {
 }
 
 provider "yandex" {
+  zone = "<зона доступности по умолчанию>"
+}
+
+provider "yandex" {
   token     = var.access["token"]
   cloud_id  = var.access["cloud_id"]
   folder_id = var.access["folder_id"]
